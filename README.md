@@ -22,9 +22,10 @@ The challenge we are dealing with is "Gen AI Orchestrator for Email and Document
 Managing large volumes of emails efficiently is a challenge for financial institutions. This project aims to automate email classification, attachment processing, and key information extraction to reduce manual effort and improve response times. By leveraging LLM, OCR, and AI Agents, the system accurately categorizes emails, extracts data from scanned documents, and optimizes email retrieval. This enhances operational efficiency and ensures faster, more accurate customer support.
 
 ## 🎥 Demo
-🔗 [Live Demo](#) (if applicable)  
-📹 [Video Demo](#) (if applicable)  
+📹 [Video Demo](https://youtu.be/CcwfhzrJblA?si=b8QroYfPCbwoOgRD)
+
 🖼️ Screenshots:
+![image](https://github.com/user-attachments/assets/4a88ae70-9cb1-4f94-8fbe-b6617b4b216c)
 
 
 ## 💡 Inspiration
@@ -52,7 +53,11 @@ Our solution intelligently processes incoming emails by classifying them into pr
 * Gmail API – A secure and efficient way to fetch emails, including metadata, email bodies, and attachments, directly from a Gmail inbox for processing. It enables programmatic access to user emails without requiring manual intervention.
 
 * Email Parsing (email, re libraries) – These libraries help in extracting structured data from raw email content by removing unnecessary headers, signatures, and quoted replies for better classification.
-
+  
+* Vector Store Technique (FAISS-CPU): Utilized for efficient storage and retrieval of email data.
+  
+* Retrieval-Augmented Generation (RAG): Implemented for duplicate checking and enhanced search accuracy.
+  
 4️⃣ **Document & Attachment Processing**
 
 * PyMuPDF / PDFplumber – Libraries used to extract text from PDF attachments, enabling automated content processing for classification without requiring human intervention. They support structured and unstructured text extraction.
@@ -90,33 +95,33 @@ Besides this, collaborating with the team and developing a solution within the g
    ```
 3. Enable Gmail API and Download credentials.json
   
-* Go to Google Cloud Console:
+&emsp; * Go to Google Cloud Console:
   
-&emsp; &emsp;  Open Google Cloud Console.
+&emsp; &emsp; &emsp; Open Google Cloud Console.
 
-&emsp; &emsp; Create a New Project:
+&emsp; &emsp; &emsp;  Create a New Project:
 
-&emsp; &emsp; &emsp; Click Select a project (top left).
+&emsp; &emsp; &emsp; &emsp; Click Select a project (top left).
 
-&emsp; &emsp; &emsp; Click New Project, give it a name, and click Create.
+&emsp; &emsp; &emsp; &emsp; Click New Project, give it a name, and click Create.
 
-* Enable Gmail API:
+&emsp; * Enable Gmail API:
   
-&emsp; &emsp; In the Cloud Console, search for Gmail API.
+&emsp; &emsp; &emsp; In the Cloud Console, search for Gmail API.
 
-&emsp; &emsp; Click Enable.
+&emsp; &emsp; &emsp;  Click Enable.
 
-* Create OAuth 2.0 Credentials:
+&emsp; * Create OAuth 2.0 Credentials:
   
-&emsp; &emsp;  Go to APIs & Services → Credentials.
+&emsp; &emsp; &emsp;  Go to APIs & Services → Credentials.
 
-&emsp; &emsp; Click Create Credentials → OAuth client ID.
+&emsp; &emsp; &emsp; Click Create Credentials → OAuth client ID.
 
-&emsp; &emsp; Select Application Type → Desktop App.
+&emsp; &emsp; &emsp; Select Application Type → Desktop App.
 
 Click Create → Download JSON file → Rename it to credentials.json
 
-* python quickstart.py to generate token
+* **python quickstart.py to generate token**
 
    
 4. Run the project  
