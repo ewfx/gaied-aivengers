@@ -26,7 +26,6 @@ Managing large volumes of emails efficiently is a challenge for financial instit
 📹 [Video Demo](#) (if applicable)  
 🖼️ Screenshots:
 
-![Screenshot 1](link-to-image)
 
 ## 💡 Inspiration
 The increasing volume of customer emails in the financial sector creates bottlenecks in processing and response times. Many emails contain attachments, multiple request types, and unstructured data, making manual handling inefficient and error-prone. This project was inspired by the need to automate email classification, extract key information, and streamline workflows using AI-driven solutions, ultimately improving customer experience and operational efficiency.
@@ -89,7 +88,38 @@ Besides this, collaborating with the team and developing a solution within the g
    ```sh
    pip install streamlit google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client crewai pdfplumber python-pptx pandas pytesseract opencv-python pillow sentence-transformers faiss-cpu
    ```
-3. Run the project  
+3. Enable Gmail API and Download credentials.json
+  
+* Go to Google Cloud Console:
+  
+&emsp; &emsp;  Open Google Cloud Console.
+
+&emsp; &emsp; Create a New Project:
+
+&emsp; &emsp; &emsp; Click Select a project (top left).
+
+&emsp; &emsp; &emsp; Click New Project, give it a name, and click Create.
+
+* Enable Gmail API:
+  
+&emsp; &emsp; In the Cloud Console, search for Gmail API.
+
+&emsp; &emsp; Click Enable.
+
+* Create OAuth 2.0 Credentials:
+  
+&emsp; &emsp;  Go to APIs & Services → Credentials.
+
+&emsp; &emsp; Click Create Credentials → OAuth client ID.
+
+&emsp; &emsp; Select Application Type → Desktop App.
+
+Click Create → Download JSON file → Rename it to credentials.json
+
+* python quickstart.py to generate token
+
+   
+4. Run the project  
    ```sh
    streamlit run main.py 
    ```
@@ -97,10 +127,12 @@ Besides this, collaborating with the team and developing a solution within the g
 ## 🏗️ Tech Stack
 - 🔹 Python
 - 🔹 Frontend - Streamlit
-- 🔹 LLM
+- 🔹 LLM models - "sambanova/Llama-3.1-Swallow-8B-Instruct-v0.3", "groq/llama3-8b-8192"
+- 🔹 Embedding model - SentenceTransformer("all-MiniLM-L6-v2")
+- 🔹 Vector store - faiss-cpu
 - 🔹 CrewAI (Agentic AI)
-- 🔹GMail API -Python client
-- 🔹Text Extraction
+- 🔹 GMail API -Python client
+- 🔹 Text Extraction
   
     &emsp;&emsp;&emsp; i. Pdfplumber  - Document
 
@@ -112,7 +144,7 @@ Besides this, collaborating with the team and developing a solution within the g
 
 ## 👥 Team
 - **Gadde, Uma bhargavi** - [GitHub](https://github.com/umagadde) | [LinkedIn](https://www.linkedin.com/in/uma-bhargavi-gadde-2b70a824a/)
-- **R, Pavithra** - [GitHub](#) | [LinkedIn](#)
+- **R, Pavithra** - [GitHub](https://github.com/PavithraGITHUB29) | [LinkedIn](https://www.linkedin.com/in/pavithra-ravikumar-a57979260)
 - **Thopireddy, Harikishan reddy** - [GitHub](https://github.com/HarikishanReddy2004) | [LinkedIn](https://www.linkedin.com/in/thopireddy-harikishan-reddy)
 - **Chennupati, Rishika K.** - [GitHub](https://github.com/rishi2332) | [LinkedIn](https://www.linkedin.com/in/rishika-krishna-ch/)
 - **Y, Sristhi** - [GitHub](https://github.com/srishti09-12) | [LinkedIn](https://www.linkedin.com/in/srishti-yadav0912)
