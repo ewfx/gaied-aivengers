@@ -115,4 +115,4 @@ Besides this, collaborating with the team and developing a solution within the g
 - **R, Pavithra** - [GitHub](#) | [LinkedIn](#)
 - **Thopireddy, Harikishan reddy** - [GitHub](https://github.com/HarikishanReddy2004) | [LinkedIn](https://www.linkedin.com/in/thopireddy-harikishan-reddy)
 - **Chennupati, Rishika K.** - [GitHub](https://github.com/rishi2332) | [LinkedIn](https://www.linkedin.com/in/rishika-krishna-ch/)
-- **Y, Sristhi** - [GitHub](#) | [LinkedIn](#)
+- **Y, Sristhi** - [GitHub](https://github.com/srishti09-12) | [LinkedIn](https://www.linkedin.com/in/srishti-yadav0912)
