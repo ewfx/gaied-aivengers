@@ -26,6 +26,8 @@ Managing large volumes of emails efficiently is a challenge for financial instit
 
 🖼️ Screenshots:
 ![image](https://github.com/user-attachments/assets/4a88ae70-9cb1-4f94-8fbe-b6617b4b216c)
+![image](https://github.com/user-attachments/assets/9e0466c3-4e17-4f2f-b393-5c6a7529be3a)
+
 
 
 ## 💡 Inspiration
