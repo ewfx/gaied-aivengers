@@ -22,7 +22,7 @@ The challenge we are dealing with is "Gen AI Orchestrator for Email and Document
 Managing large volumes of emails efficiently is a challenge for financial institutions. This project aims to automate email classification, attachment processing, and key information extraction to reduce manual effort and improve response times. By leveraging LLM, OCR, and AI Agents, the system accurately categorizes emails, extracts data from scanned documents, and optimizes email retrieval. This enhances operational efficiency and ensures faster, more accurate customer support.
 
 ## 🎥 Demo
-📹 [Video Demo](https://youtu.be/CcwfhzrJblA?si=b8QroYfPCbwoOgRD)
+📹 Video Demo - [link](https://youtu.be/CcwfhzrJblA?si=b8QroYfPCbwoOgRD)
 
 🖼️ Screenshots:
 ![image](https://github.com/user-attachments/assets/4a88ae70-9cb1-4f94-8fbe-b6617b4b216c)
@@ -40,9 +40,10 @@ Our solution intelligently processes incoming emails by classifying them into pr
 
 ## 🛠️ How We Built It
 1️⃣ **Large Language Models (LLMs)**
-* DeepSeek Distill 70B – A high-performance language model used for understanding and classifying email content based on predefined request and sub-request types. It processes structured and unstructured text to determine the primary intent of an email.
 
-* SambaNova – A multimodal AI model capable of extracting and analyzing text from various document formats like PDF, Excel, PPT, and images, enabling a comprehensive evaluation of email attachments.
+* sambanova/Llama-3.1-Swallow-8B-Instruct-v0.3 – Optimized LLaMA 3 model for instruction-following tasks.
+
+* groq/llama3-8b-8192 - High-speed LLaMA 3 model with extended context handling.
 
 2️⃣ **Backend Processing**
 
@@ -56,7 +57,7 @@ Our solution intelligently processes incoming emails by classifying them into pr
   
 * Vector Store Technique (FAISS-CPU): Utilized for efficient storage and retrieval of email data.
   
-* Retrieval-Augmented Generation (RAG): Implemented for duplicate checking and enhanced search accuracy.
+* Retrieval-Augmented Generation (RAG): Implemented for duplicate checking.
   
 4️⃣ **Document & Attachment Processing**
 
@@ -119,9 +120,11 @@ Besides this, collaborating with the team and developing a solution within the g
 
 &emsp; &emsp; &emsp; Select Application Type → Desktop App.
 
-Click Create → Download JSON file → Rename it to credentials.json
+&emsp; &emsp; &emsp; Click Create → Download JSON file → Rename it to credentials.json
 
-* **python quickstart.py to generate token**
+&emsp; &emsp; &emsp; Save the downloaded crdentials.json file to your project directory
+
+&emsp; * **python quickstart.py to generate token**
 
    
 4. Run the project  
