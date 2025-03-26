@@ -87,7 +87,7 @@ Besides this, collaborating with the team and developing a solution within the g
    ```
 2. Install dependencies  
    ```sh
-   pip install streamlit google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client crewai pdfplumber python-pptx pandas  pytesseract opencv-python pillow
+   pip install streamlit google-auth google-auth-oauthlib google-auth-httplib2 google-api-python-client crewai pdfplumber python-pptx pandas pytesseract opencv-python pillow sentence-transformers faiss-cpu
    ```
 3. Run the project  
    ```sh
